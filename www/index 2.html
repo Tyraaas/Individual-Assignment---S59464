@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+
+      <!-- Custom styles for this template -->
+      <link href="css/navbar-fixed-top.css" rel="stylesheet">
+      <style>
+         body {
+            background-color: #e93467;
+            
+         }
+
+         .brandName {
+            color: #e93467 !important;
+            font-size: x-large;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-left: 10px;
+            margin-top: 20px;
+         }
+         
+         span {
+            color:white;
+         }
+         .bawah {
+            text-align: center;
+            transition: background-color 0.2s ease,
+              padding 0.8s linear;
+            
+         }
+         .m-fadeOut {
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s linear 300ms, opacity 300ms;
+         }
+
+         .m-fadeIn {
+         visibility: visible;
+         opacity: 1;
+         transition: visibility 0s linear 0s, opacity 300ms;
+         }
+
+         .item-fade {
+            vertical-align: top;
+            transition: opacity 0.3s;
+            -webkit-transition: opacity 0.3s;
+            opacity: 1;
+         }
+
+         .item-fade:hover {
+            opacity: 0.2;
+         }
+      </style>
+   </head>
+   <body>
+      
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-default navbar-fixed-top">
+         <div class="container">
+            <div class="navbar-header">
+               
+           
+               
+               <a class="brandName" href="#">BADAK FOOD</a>
+            </div>
+            
+
+            
+         </div>
+         
+      </nav>
+      <div class="container m-fadeIn">
+         <br><br><br><br><br><br>
+         <div class="bawah item-fade"> <a href="main.html" class="m-fadeIn">
+            <img src="img/letsgotext.png" alt="Lets go" width="70%">
+            <img src="img/badak2.png" alt="panda" width="70%">
+         </a>
+         </div>
+      </div>
+         
+
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+   </body>
+</html>

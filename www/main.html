@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Bootstrap Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <!-- Custom styles for this template -->
+      <link href="css/navbar-fixed-top.css" rel="stylesheet">
+      <link href="css/style2.css" rel="stylesheet">
+
+      <style>
+         .navbar-fixed-top {
+            background-color: #cadfdd;
+         }
+         .navbar-brand {
+            color: white !important;
+         }
+         button {
+            border: none !important;
+         }
+         .order {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: antiquewhite;
+            border-radius: 20px;
+         }
+         ul {
+            list-style: none;
+         }
+         li {
+            min-width: 20px;
+            min-height: 50px;
+            vertical-align: middle;
+         }
+         .item {
+            text-align: center;
+            background-color: aliceblue;
+            border-radius: 50px;
+            padding: 10px 20px 10px 20px;
+            margin: 10px 10px 10px 10px;
+         }
+         .itemtajuk {
+            font-weight: bold;
+         }
+         .itemdesc {
+            color: slategrey;
+            font-size: 12px;
+         }
+         .ritemlist {
+            background-color:bisque;
+            border-radius: 50px;
+            padding: 10px 20px 10px 20px;
+            margin: 10px 10px 10px 10px;
+            display: flex;
+            white-space: nowrap;
+            overflow: auto;
+         }
+         .ritem {
+            display: flex;
+            flex-direction: column;
+            min-width: 150px;
+         }
+         
+         .ritemmasa {
+            position:absolute;
+            bottom: -100px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            padding: 10px 10px 10px 10px;
+         }
+         .ritemnama {
+            font-weight: bold;
+         }
+         a:hover {
+            opacity: 0.8;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-fixed-top" >
+         <div class="container">
+            <div class="navbar-header">
+               <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>  --> 
+               
+               <button type="button" class="navbar-toggle">
+                  <i class="fa fa-shopping-cart" style="color:white"></i>
+               </button>
+
+               <button type="button" class="navbar-toggle">
+                  <i class="fa fa-heart-o" style="color:white"></i>
+               </button>
+
+              
+               <a class="navbar-brand" href="#">Badak Food </a>
+            </div>
+            <!--
+            <div id="navbar" class="navbar-collapse collapse">
+               <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Profile</a></li>
+                      <li><a href="#">Logout</a></li>
+                    </ul>
+                  </li>
+               </ul>
+            </div> --> <!--/.nav-collapse -->
+         </div>
+      </nav>
+
+      
+         <!-- Search box -->
+         <div class="nav" style="background-color: #34e95b; margin-top: -15px;padding-top: 10px; padding-bottom: 10px;">
+            <form action="/hms/accommodations" method="GET" > 
+               
+               <div style="display:flexbox;">
+               
+                  <div class="input-group">
+                     
+                     <input type="text" class="form-control" placeholder="Search" id="txtSearch"/>
+                     <div class="input-group-btn">
+                        <button class="btn btn-primary" type="submit">
+                           <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                     </div>
+                  </div>
+               
+               </div>
+            </form>
+         </div>
+      
+
+      <div class="container">
+         
+         <div class="order">
+            <div class="sebelah" style="display: flex;">
+               <div class="sebelahkiri">
+                  
+                  <div class="item" style="display: flex; flex-direction: column;">
+                     <div class="itemtajuk">
+                        Badak Mart
+                     </div>
+                     <div class="itemdesc">
+                        Badak Food is anywhere!
+                     </div>
+                     <div class="itemimage">
+                        <a href="GetItem.html">
+                         <img src="img/foodtruck.png" alt="" width="100%"> </a>
+                     </div>
+                  </div>
+               
+                  <br>
+                  <div class="item" style="display: flex; flex-direction: column;">
+                     <div class="itemtajuk">
+                        Dine-in
+                     </div>
+                     <div class="itemdesc">
+                        Dine in your favourite place!
+                     </div>
+                     <div class="itemimage">
+                        <a href="GetItem.html">
+                        <img src="img/dine-in.png" alt="" width="100%">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="sebelahkanan">
+                  <div class="item" style="display: flex; flex-direction: column;">
+                     <div class="itemtajuk">
+                        Food Delivery
+                     </div>
+                     <div class="itemdesc">
+                        Deliver your Food here!
+                     </div>
+                     <div class="itemimage">
+                        <a href="GetItem.html">
+                        <img src="img/food.png" galt="" width="40%">
+                        </a>
+                     </div>
+                  </div>
+                  
+                  <div class="item" style="display: flex; flex-direction: column;">
+                     <div class="itemtajuk">
+                        Pickup
+                     </div>
+                     <div class="itemdesc">
+                        Get your dream food
+                     </div>
+                     <div class="itemimage">
+                        <a href="GetItem.html">
+                        <img src="img/pickup.png" alt="" width="25%">
+                        </a>
+                     </div>
+                  </div>
+                  <div class="item" style="display: flex; flex-direction: column;">
+                     <div class="itemtajuk">
+                        Shops
+                     </div>
+                     <div class="itemdesc">
+                        List of shops available
+                     </div>
+                     <div class="itemimage">
+                        <a href="GetItem.html">
+                        <img src="img/mart.png" alt="" width="40%">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+            
+            <br><br>
+            
+
+            <br><br>
+
+         
+
+      </div>
+
+      <nav class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container">
+         <!--div class="well"-->
+                  <div class="row">
+                     <div class="col-md-12">   
+                        &copy; Thirasakh Seen - S59464
+                     </div>
+                  </div>
+               </div>
+            <!--/div-->
+      </div>
+      </nav>
+         
+
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+   </body>
+</html>
